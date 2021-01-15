@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+/*font-family: 'Gothic A1', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Noto Serif KR', serif;*/
+
+:root{
+	--primary-color: #0C20D4;
+	--primary-dark-color: #040981;
+	--background-color: #D9D9D9;
+}
+
+section.options{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+
+	width: 484px;
+	background-color: var(--primary-color);
+	color: white;
+	padding: 64px;
+}
+div.option-header{
+	margin-bottom: 52px;
+
+}
+
+
+h2{
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 28px;
+}
+
+h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+body{
+	padding: 40px 40px 40px 524px;
+	background-color: var(--background-color);
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.output{
+	background-color: #ffffff;
+	padding: 10%;
+}
+
+select {
+	width: 100%;
+	text-align-last:center;
+}
+
+label{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+	display: block;
+/*	background-color: red;
+*/	margin: 0 0 8px 0;
+}
+
+label span{
+	float: right;
+	font-style: italic;
+}
+
+div.option{
+	margin-bottom: 24px;
+}
+
+input[type="range"]{
+	width: 100%;
+}
+
+
+a.saveButton{
+	font-family: 'Roboto';
+	display: block;
+/*	width: 100%;*/
+	background-color: var(--primary-dark-color);
+	color: white;
+	font-size: 28px;
+	font-weight: bold;
+	text-decoration: none;
+
+	height: 80px;
+	border-radius: 40px;
+	text-align: center;
+	line-height: 80px;
+
+/*	position: fixed;
+	bottom: 80px;
+*/
+	position: absolute;
+	
+	/*padding-left: inherit;
+    padding-right: inherit;*/
+    left:64px;
+    bottom:64px;
+    right:64px;
+
+    transition: all 0.3s ease-in;
+}
+
+a.saveButton:hover{
+	background-color: var(--background-color);
+	color: var(--primary-dark-color);
+}
